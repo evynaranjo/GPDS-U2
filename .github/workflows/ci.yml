@@ -3,6 +3,7 @@ name: CI suma_lista
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
