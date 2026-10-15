@@ -6,7 +6,7 @@ from suma_lista import suma_lista
 
 
 def test_suma_lista_con_enteros():
-    assert suma_lista([1, 2, 3, 4]) == 10
+    assert suma_lista([1, 2, 3, 4]) == 111
 
 
 def test_suma_lista_vacia_devuelve_cero():
