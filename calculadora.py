@@ -163,14 +163,14 @@ class CalculadoraBMO:
     def crear_controles(self):
         # Barra plana de un solo tono, como el control frontal original de BMO.
         self.redondeado(
-            28, 350, 218, 392, 5,
+            36, 350, 218, 392, 5,
             fill="#365F58", outline="#294B46", width=2
         )
 
         verde_barra = "#365F58"
-        self.crear_boton_rectangular(31, 357, 91, 385, "AC", "limpiar", verde_barra, 11)
-        self.crear_boton_rectangular(93, 357, 153, 385, "±", "signo", verde_barra, 15)
-        self.crear_boton_rectangular(155, 357, 215, 385, "%", "porcentaje", verde_barra, 14)
+        self.crear_boton_rectangular(39, 357, 96, 385, "AC", "limpiar", verde_barra, 11)
+        self.crear_boton_rectangular(98, 357, 155, 385, "±", "signo", verde_barra, 15)
+        self.crear_boton_rectangular(157, 357, 214, 385, "%", "porcentaje", verde_barra, 14)
 
         self.crear_cruceta(112, 500)
 
@@ -182,7 +182,7 @@ class CalculadoraBMO:
             [(".", "."), ("0", "0"), ("⌫", "borrar")],
         ]
         for fila, y in zip(numeros, (373, 443, 513, 583)):
-            for (texto, valor), x in zip(fila, (263, 332, 401)):
+            for (texto, valor), x in zip(fila, (250, 318, 386)):
                 color = "#72D5E6" if valor == "borrar" else "#EAF4DF"
                 self.crear_boton(x, y, texto, valor, color, radio=27, fuente=17)
 
