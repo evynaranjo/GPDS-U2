@@ -125,7 +125,7 @@ PAGINA = """
             <div class="error" role="alert">{{ error }}</div>
         {% endif %}
 
-        <small>Proyecto Deploy con Docker · GPDS-U2</small>
+        <small>Proyecto Deploy con azure · GPDS-U2</small>
     </main>
 </body>
 </html>
